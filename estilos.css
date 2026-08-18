@@ -1,0 +1,257 @@
+:root {
+  --bg: #0f172a;
+  --bg-2: #1e293b;
+  --bg-3: #020617;
+  --accent: #00f5a0;
+  --accent-dim: #00d084;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #334155;
+  --card: rgba(30, 41, 59, 0.72);
+  --warn: #facc15;
+  --font: Inter, system-ui, sans-serif;
+  --display: Orbitron, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(0, 245, 160, 0.12), transparent 50%),
+    radial-gradient(900px 400px at 100% 0%, rgba(56, 189, 248, 0.08), transparent 45%),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dim);
+}
+
+.wrap {
+  width: min(1080px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.82);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--display);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.brand img {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  image-rendering: pixelated;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a[aria-current='page'] {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 56px 0 28px;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pills li {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 28px 0 48px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card h2,
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.notice {
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: rgba(0, 245, 160, 0.08);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin: 24px 0 40px;
+}
+
+.notice strong {
+  color: var(--accent);
+}
+
+.legal {
+  padding: 32px 0 64px;
+}
+
+.legal h1 {
+  font-family: var(--display);
+  font-size: 1.8rem;
+}
+
+.legal h2 {
+  margin-top: 32px;
+  font-size: 1.2rem;
+}
+
+.legal h3 {
+  margin-top: 22px;
+  font-size: 1.05rem;
+}
+
+.legal p,
+.legal li {
+  color: var(--muted);
+}
+
+.legal strong {
+  color: var(--text);
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.lang {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin: 28px 0 8px;
+}
+
+code {
+  font-size: 0.9em;
+  color: var(--accent);
+}
+
+ol.steps {
+  color: var(--muted);
+  padding-left: 20px;
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.setup {
+  border: 1px dashed var(--warn);
+  background: rgba(250, 204, 21, 0.08);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 16px 0 0;
+  font-size: 0.92rem;
+}

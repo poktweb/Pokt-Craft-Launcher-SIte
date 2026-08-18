@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokt Craft Launcher</title>
+    <meta
+      name="description"
+      content="Pokt Craft Launcher é um launcher de Minecraft Java Edition. Instale versões, mods e sincronize mundos com o Google Drive da sua conta (Pokt Cloud)."
+    />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="config.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html">
+          <img src="favicon.png" alt="" />
+          Pokt Craft
+        </a>
+        <nav>
+          <a href="index.html" aria-current="page">Início</a>
+          <a href="index.html#funcionalidades">Funcionalidades</a>
+          <a href="index.html#pokt-cloud">Pokt Cloud</a>
+          <a href="privacidade.html">Privacidade</a>
+          <a href="termos.html">Termos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="setup" data-setup-banner hidden>
+          Antes de enviar ao Google: edite <code>config.js</code> com o seu e-mail de suporte e publique este site num
+          domínio HTTPS que você controla. Depois cole a URL desta página e da
+          <a href="privacidade.html">política de privacidade</a> no Google Cloud Console (Branding).
+        </p>
+        <h1>Pokt Craft Launcher</h1>
+        <p class="lede">
+          Launcher desktop para <strong>Minecraft Java Edition</strong>. Instale versões oficiais, Fabric, Forge e
+          NeoForge, gerencie mods e instâncias, entre com a conta Microsoft e sincronize mundos com o
+          <strong>seu</strong> Google Drive — sem enviar saves para um servidor da Pokt.
+        </p>
+        <ul class="pills">
+          <li>Windows, Linux e macOS (Electron)</li>
+          <li>Conta Microsoft ou modo offline</li>
+          <li>Pokt Cloud · Google Drive</li>
+        </ul>
+      </section>
+
+      <section id="funcionalidades">
+        <div class="grid">
+          <article class="card">
+            <h2>Versões e loaders</h2>
+            <p>
+              Baixa e valida o cliente Minecraft, bibliotecas e assets. Suporta Vanilla, Fabric, Forge e NeoForge, com
+              instâncias isoladas para cada perfil ou modpack.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Mods e modpacks</h2>
+            <p>
+              Pesquisa e instalação a partir de catálogos públicos (CurseForge e Modrinth), com progresso visível no
+              launcher.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Contas</h2>
+            <p>
+              Login Microsoft (conta original de Minecraft) ou apelido offline. Skins podem ser aplicadas no modo
+              offline. São fluxos separados do Google Drive.
+            </p>
+          </article>
+          <article class="card">
+            <h2>Desempenho</h2>
+            <p>
+              Sugestão de RAM e Java conforme o hardware, Java portátil quando necessário, e opções de vídeo ajustadas
+              ao perfil da máquina.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pokt-cloud" class="card" style="margin-bottom: 28px">
+        <h2>Pokt Cloud — Google Drive</h2>
+        <p>
+          O Pokt Cloud sincroniza as pastas de mundos (<code>saves/</code>) entre este computador e o Google Drive
+          <strong>da conta que você autorizar</strong>. Os ficheiros ficam na pasta <code>PoktCraft/</code>
+          (<code>saves</code>, <code>metadata</code> e <code>backups</code>) no seu Drive.
+        </p>
+        <ol class="steps">
+          <li>No launcher, abra Pokt Cloud e escolha Ligar Google.</li>
+          <li>
+            O navegador pede autorização. A app só pede acesso a ficheiros e pastas que <em>ela própria</em> criar
+            (<code>drive.file</code>), mais e-mail para mostrar qual conta está ligada.
+          </li>
+          <li>Os mundos sobem e descem de forma incremental. Pode jogar offline se o Drive estiver indisponível.</li>
+          <li>Desconectar remove a sessão neste PC. Os mundos no computador e no Drive não são apagados.</li>
+        </ol>
+      </section>
+
+      <aside class="notice" id="google-apis">
+        <p>
+          <strong>Google API Services User Data Policy / Limited Use.</strong>
+          O uso, pelo Pokt Craft Launcher, das informações recebidas das APIs do Google adere à
+          <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+          incluindo os requisitos de <strong>Limited Use</strong>.
+        </p>
+        <p style="margin: 10px 0 0">
+          Dados do Google <strong>não</strong> são vendidos, <strong>não</strong> são usados para publicidade e
+          <strong>não</strong> são usados para treinar modelos de inteligência artificial. Leia a
+          <a href="privacidade.html">Política de Privacidade</a>.
+        </p>
+      </aside>
+
+      <section class="card" style="margin-bottom: 48px">
+        <h2>Marcas</h2>
+        <p class="disclaimer">
+          Minecraft é marca da Mojang AB / Microsoft. Google Drive e Google são marcas da Google LLC. O Pokt Craft
+          Launcher é um produto independente e não é afiliado, endossado ou patrocinado pela Mojang, Microsoft ou
+          Google.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap foot">
+        <div>
+          © 2026 Pokt Craft ·
+          <a href="privacidade.html">Privacidade</a>
+          ·
+          <a href="termos.html">Termos</a>
+          ·
+          suporte:
+          <a data-support-email href="#">e-mail de suporte</a>
+        </div>
+        <div>Pokt Craft Launcher — Minecraft Java</div>
+      </div>
+    </footer>
+  </body>
+</html>
