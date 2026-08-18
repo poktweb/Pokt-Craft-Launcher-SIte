@@ -1,5 +1,2 @@
 User-agent: *
 Allow: /
-
-# Coloque a URL pública depois de hospedar, por exemplo:
-# Sitemap: https://SEU-DOMINIO/sitemap.xml

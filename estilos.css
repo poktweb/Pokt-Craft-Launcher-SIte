@@ -245,13 +245,3 @@ ol.steps {
   font-size: 0.85rem;
   color: var(--muted);
 }
-
-.setup {
-  border: 1px dashed var(--warn);
-  background: rgba(250, 204, 21, 0.08);
-  color: var(--text);
-  border-radius: 12px;
-  padding: 12px 14px;
-  margin: 16px 0 0;
-  font-size: 0.92rem;
-}
