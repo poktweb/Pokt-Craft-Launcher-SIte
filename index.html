@@ -3,175 +3,128 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Pokt Craft Launcher — Download Minecraft</title>
+    <title>Pokt Craft Launcher</title>
     <meta
       name="description"
-      content="Pokt Craft Launcher: todas as versões oficiais de Minecraft Java, Forge, Fabric, NeoForge, mods e Pokt Cloud no seu Google Drive."
+      content="Pokt Craft Launcher: Minecraft Java no teu PC, com Pokt Cloud a guardar mundos no teu Google Drive."
     />
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oswald:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <header>
-      <div class="wrap nav">
+    <div class="shell">
+      <aside class="rail">
         <a class="brand" href="index.html">
           <img src="logo.svg" alt="" />
-          Pokt Craft
+          Pokt Craft Launcher
         </a>
-        <nav>
-          <a href="index.html" aria-current="page">Início</a>
-          <a href="index.html#download">Download</a>
-          <a href="index.html#mods">Mods</a>
-          <a href="index.html#pokt-cloud">Pokt Cloud</a>
-          <a href="privacidade.html">Privacidade</a>
-          <a href="termos.html">Termos</a>
-        </nav>
-      </div>
-    </header>
+        <a class="item" href="index.html" aria-current="page">Home</a>
+        <a class="item" href="#cloud">Pokt Cloud</a>
+        <a class="item" href="privacidade.html">Privacidade</a>
+        <a class="item" href="termos.html">Termos</a>
+        <div class="grow"></div>
+        <a class="item warn" href="#jogar">Jogar</a>
+      </aside>
 
-    <main>
-      <section class="hero wrap">
-        <p class="kicker">Launcher para Minecraft Java Edition</p>
-        <h1>Pokt Craft — o launcher de Minecraft</h1>
-        <p class="lede">
-          Todas as versões oficiais, Forge, Fabric e NeoForge, mods, conta Microsoft e mundos no
-          <strong>seu</strong> Google Drive com Pokt Cloud.
+      <div class="stage">
+        <div class="topbar">
+          <span class="chip">Minecraft Java</span>
+          <span class="chip">Vanilla · Fabric · Forge · NeoForge</span>
+          <span class="chip">Pokt Cloud · Google Drive</span>
+        </div>
+
+        <section class="hero">
+          <div>
+            <h1>O teu launcher. Os teus mundos. O teu Drive.</h1>
+            <p class="lede">
+              Instala versões e mods no PC. O Pokt Cloud copia os saves para a pasta PoktCraft na conta Google que
+              autorizares — não para um servidor nosso.
+            </p>
+            <div class="actions">
+              <a class="play" href="#jogar">Jogar</a>
+              <a class="ghost" href="#cloud">Como liga ao Drive →</a>
+            </div>
+          </div>
+          <figure class="shot">
+            <img src="launcher.jpg" alt="Janela do Pokt Craft Launcher" />
+          </figure>
+        </section>
+
+        <section class="bento" id="features">
+          <article class="tile wide">
+            <span class="tag">Instâncias</span>
+            <h2>Um perfil por pack</h2>
+            <p>
+              Vanilla, Fabric, Forge ou NeoForge em pastas isoladas. Bibliotecas e assets vêm dos servidores oficiais,
+              com hash. O Java e a RAM acompanham o hardware que o launcher vê.
+            </p>
+          </article>
+          <article class="tile">
+            <span class="tag">Mods</span>
+            <h3>CurseForge e Modrinth</h3>
+            <p>Pesquisa e instala no próprio app, com barra de progresso.</p>
+          </article>
+          <article class="tile">
+            <span class="tag">Contas</span>
+            <h3>Microsoft ou nick</h3>
+            <p>Login original ou offline. Skins no launcher. Google é só o Cloud.</p>
+          </article>
+          <article class="tile">
+            <span class="tag">PC</span>
+            <h3>Alto desempenho</h3>
+            <p>Perfil LOW/MID/HIGH, FPS estimado e Java portátil se fizer falta.</p>
+          </article>
+          <article class="tile">
+            <span class="tag">Sistemas</span>
+            <h3>Windows, Linux, macOS</h3>
+            <p>Mesmo launcher Electron nos três. Sem loja no meio.</p>
+          </article>
+        </section>
+
+        <section class="cloud" id="cloud">
+          <h2>Pokt Cloud</h2>
+          <p class="lede" style="margin-bottom: 0">
+            Sincroniza <code>saves/</code> com o Google Drive da tua conta. Âmbito <code>drive.file</code>: só
+            ficheiros que o launcher criar.
+          </p>
+          <ol class="steps">
+            <li>Ligar Google no launcher — o browser pede autorização.</li>
+            <li>Surge a pasta PoktCraft (saves, metadata, backups).</li>
+            <li>Sync incremental ao sair do jogo ou quando pedires.</li>
+            <li>Desligar apaga a sessão neste PC, não os mundos.</li>
+          </ol>
+        </section>
+
+        <div class="bar" id="jogar">
+          <span class="nick">Jogador</span>
+          <span class="chip">ONLINE</span>
+          <span class="chip">Pokt Cloud</span>
+          <span class="chip">Java</span>
+          <span style="flex: 1"></span>
+          <a class="play" href="#jogar">Entrar no jogo</a>
+        </div>
+
+        <aside class="notice" id="google-apis">
+          <p>
+            <strong>Google API Services User Data Policy / Limited Use.</strong>
+            O uso, pelo Pokt Craft Launcher, das informações recebidas das APIs do Google adere à
+            <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+            incluindo Limited Use. Dados do Google não são vendidos, não vão para publicidade e não treinam IA.
+            <a href="privacidade.html">Privacidade</a>.
+          </p>
+        </aside>
+        <p class="disclaimer">
+          Minecraft é marca da Mojang AB / Microsoft. Google Drive é marca da Google LLC. Pokt Craft Launcher é
+          independente e não é afiliado a Mojang, Microsoft ou Google.
         </p>
-        <a class="btn-dl" href="#download">Download</a>
-        <p class="platforms">Disponível para Windows, Linux e macOS</p>
-        <div class="mockups">
-          <img src="launcher.jpg" alt="Pokt Craft Launcher — interface com jogar, instâncias, mods e Pokt Cloud" />
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap split">
-          <div>
-            <h2>Todas as versões oficiais: de Alpha aos snapshots</h2>
-            <p>
-              Instale qualquer versão do Minecraft Java a partir dos servidores dos desenvolvedores. Os ficheiros não
-              são modificados — Vanilla limpa, quando você quiser, incluindo as builds mais recentes.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Pokt Craft Launcher a mostrar versões e o botão Jogar" />
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap split reverse">
-          <div>
-            <h2>Forge, Fabric e NeoForge num clique</h2>
-            <p>
-              Loaders e instâncias isoladas sem caçar instaladores à mão. O launcher descarrega, valida e deixa o perfil
-              pronto a jogar — inclusive NeoForge nas versões novas.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Instância NeoForge no Pokt Craft Launcher" />
-        </div>
-      </section>
-
-      <section class="band" id="mods">
-        <div class="wrap split">
-          <div>
-            <h2>Mods e modpacks</h2>
-            <p>
-              Catálogo CurseForge e Modrinth no próprio launcher: pesquisa, instalação e progresso visíveis. Monta o
-              teu pack sem misturar pastas à força.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Separador Mods no Pokt Craft Launcher" />
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap split reverse">
-          <div>
-            <h2>Conta original ou modo offline</h2>
-            <p>
-              Entra com Microsoft (Minecraft original) ou usa um nick offline. Skins no launcher. O login Google do Pokt
-              Cloud é outro fluxo — só para o Drive, se quiseres.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Conta e skins no Pokt Craft Launcher" />
-        </div>
-      </section>
-
-      <section class="band" id="pokt-cloud">
-        <div class="wrap split">
-          <div>
-            <h2>Pokt Cloud no teu Google Drive</h2>
-            <p>
-              Os mundos (<code>saves/</code>) sincronizam com a pasta <code>PoktCraft/</code> na conta Google que
-              autorizares. Não passam por um servidor Pokt. Podes jogar offline se o Drive estiver indisponível.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Pokt Cloud ligado no Pokt Craft Launcher" />
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap split reverse">
-          <div>
-            <h2>Alto desempenho</h2>
-            <p>
-              RAM, Java e opções de vídeo ajustadas ao teu PC. O launcher mostra perfil, FPS estimado e estado do
-              sistema para entrares no jogo sem configuração às cegas.
-            </p>
-          </div>
-          <img src="launcher.jpg" alt="Painel de desempenho Alto desempenho no launcher" />
-        </div>
-      </section>
-
-      <section class="band" id="download">
-        <div class="wrap">
-          <h2 class="center-title">Download Pokt Craft</h2>
-          <p class="lede" style="margin: 0 auto 18px; max-width: 640px">
-            O Pokt Craft Launcher é o aplicativo desktop desta página. Corre em Windows, Linux e macOS.
-          </p>
-          <a class="btn-dl" href="index.html">Pokt Craft Launcher</a>
-          <div class="os">
-            <span>Windows</span>
-            <span>Linux</span>
-            <span>macOS</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="wrap">
-          <aside class="notice" id="google-apis">
-            <p>
-              <strong>Google API Services User Data Policy / Limited Use.</strong>
-              O uso, pelo Pokt Craft Launcher, das informações recebidas das APIs do Google adere à
-              <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
-              incluindo os requisitos de Limited Use. Dados do Google não são vendidos, não vão para publicidade e não
-              treinam IA. <a href="privacidade.html">Política de Privacidade</a>.
-            </p>
-          </aside>
-          <p class="disclaimer" style="text-align: center; margin: 28px 0 0">
-            Minecraft é marca da Mojang AB / Microsoft. Google Drive é marca da Google LLC. O Pokt Craft Launcher não é
-            afiliado, endossado ou patrocinado pela Mojang, Microsoft ou Google.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrap foot">
-        <div>
-          © 2026 Pokt Craft ·
-          <a href="privacidade.html">Privacidade</a>
-          ·
-          <a href="termos.html">Termos</a>
-        </div>
-        <div>Pokt Craft Launcher — Minecraft Java</div>
+        <footer class="mini">© 2026 Pokt Craft</footer>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
