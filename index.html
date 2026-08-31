@@ -25,6 +25,8 @@
       </a>
       <nav class="menu">
         <a href="index.html" aria-current="page">Início</a>
+        <a href="#download">Download</a>
+        <a href="#galeria">Galeria</a>
         <a href="#cloud">Pokt Cloud</a>
         <a href="privacidade.html">Privacidade</a>
         <a href="termos.html">Termos</a>
@@ -39,10 +41,19 @@
             Launcher de Minecraft Java com instâncias, mods e conta Microsoft. O Pokt Cloud grava os saves na conta
             Google que autorizares — não num servidor Pokt.
           </p>
-          <a class="cta" href="#cloud">Ver Pokt Cloud</a>
+          <div class="cta-row">
+            <a class="cta" href="download/Pokt-Craft-Launcher-0.1.0.exe" download>
+              Baixar para Windows
+            </a>
+            <a class="cta cta-outline" href="#cloud">Ver Pokt Cloud</a>
+          </div>
+          <p class="download-note" id="download">
+            Executável portátil (~134&nbsp;MB) para Windows 10/11 · execute
+            <strong>Pokt-Craft-Launcher-0.1.0.exe</strong> (não precisa instalar)
+          </p>
         </div>
         <figure class="frame">
-          <img src="launcher.jpg" alt="Pokt Craft Launcher no ambiente de trabalho" />
+          <img src="img1.png" alt="Pokt Craft Launcher — tela principal" />
         </figure>
       </section>
 
@@ -54,18 +65,44 @@
       </section>
 
       <section class="cards">
-        <article class="card">
+        <article class="card card-shot">
+          <img src="img2.png" alt="Instâncias e perfis no launcher" />
           <h2>Instâncias limpas</h2>
           <p>Cada pack na sua pasta. Bibliotecas e assets oficiais, conferidos por hash.</p>
         </article>
-        <article class="card">
+        <article class="card card-shot">
+          <img src="img3.png" alt="Login Microsoft e skins" />
           <h2>Microsoft ou nick</h2>
           <p>Conta original para online, ou offline com skin. Google fica só para o Cloud.</p>
         </article>
-        <article class="card">
+        <article class="card card-shot">
+          <img src="img4.png" alt="Mods e catálogo CurseForge / Modrinth" />
           <h2>À medida do PC</h2>
           <p>RAM, Java e gráficos segundo o hardware. Podes jogar se o Drive estiver fora.</p>
         </article>
+      </section>
+
+      <section class="gallery" id="galeria">
+        <h2>Interface do launcher</h2>
+        <div class="gallery-grid">
+          <figure class="frame"><img src="img1.png" alt="Visão geral do Pokt Craft Launcher" /></figure>
+          <figure class="frame"><img src="img2.png" alt="Gestão de instâncias" /></figure>
+          <figure class="frame"><img src="img3.png" alt="Conta e personalização" /></figure>
+          <figure class="frame"><img src="img4.png" alt="Mods e modpacks" /></figure>
+        </div>
+      </section>
+
+      <section class="download-panel">
+        <div>
+          <h2>Download gratuito</h2>
+          <p>
+            Um único ficheiro <strong>.exe</strong> portátil com o Pokt Craft Launcher completo.
+            Abre direto no Windows — sem ZIP e sem instalador.
+          </p>
+        </div>
+        <a class="cta cta-large" href="download/Pokt-Craft-Launcher-0.1.0.exe" download>
+          Download Windows (.exe)
+        </a>
       </section>
 
       <section class="cloud" id="cloud">
@@ -98,7 +135,12 @@
     </main>
 
     <footer class="foot">
-      <div>© 2026 Pokt Craft · <a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a></div>
+      <div>
+        © 2026 Pokt Craft ·
+        <a href="download/Pokt-Craft-Launcher-0.1.0.exe" download>Download Windows</a> ·
+        <a href="privacidade.html">Privacidade</a> ·
+        <a href="termos.html">Termos</a>
+      </div>
       <div>Windows · Linux · macOS</div>
     </footer>
   </body>
