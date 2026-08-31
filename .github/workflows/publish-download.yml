@@ -1,0 +1,28 @@
+name: Publish Windows download
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'download/**'
+      - '.github/workflows/publish-download.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Create or update GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.1.0
+          name: Pokt Craft Launcher 0.1.0
+          body: Launcher portátil Windows (.exe).
+          files: download/Pokt-Craft-Launcher-0.1.0.exe
+          make_latest: true

@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/download/Pokt-Craft-Launcher-0.1.0.exe",
+      "destination": "https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0.exe"
+    }
+  ]
+}
