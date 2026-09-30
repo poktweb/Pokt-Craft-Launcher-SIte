@@ -2,8 +2,8 @@
 (function () {
   'use strict';
 
-  const CLOUD_GET_URL = 'https://abacus.jasoncameron.dev/get/poktcraft-site/downloads';
-  const CLOUD_HIT_URL = 'https://abacus.jasoncameron.dev/hit/poktcraft-site/downloads';
+  const CLOUD_GET_URL = 'https://abacus.jasoncameron.dev/get/poktcraft-launcher/downloads-v1';
+  const CLOUD_HIT_URL = 'https://abacus.jasoncameron.dev/hit/poktcraft-launcher/downloads-v1';
   const API_ENDPOINT = '/api/downloads';
 
   let currentCount = null;
@@ -46,6 +46,10 @@
           renderCount(data.value);
           return;
         }
+      } else if (res.status === 404) {
+        // Ainda sem downloads na nuvem
+        renderCount(0);
+        return;
       }
     } catch (_) {
       // Ignora erro e vai para o downloads.json
@@ -62,8 +66,7 @@
         }
       }
     } catch (_) {
-      // Fallback final
-      renderCount(1);
+      renderCount(0);
     }
   }
 

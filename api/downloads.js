@@ -4,8 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const CLOUD_GET_URL = 'https://abacus.jasoncameron.dev/get/poktcraft-site/downloads';
-const CLOUD_HIT_URL = 'https://abacus.jasoncameron.dev/hit/poktcraft-site/downloads';
+const CLOUD_GET_URL = 'https://abacus.jasoncameron.dev/get/poktcraft-launcher/downloads-v1';
+const CLOUD_HIT_URL = 'https://abacus.jasoncameron.dev/hit/poktcraft-launcher/downloads-v1';
 
 function getLocalCount() {
   try {
@@ -13,12 +13,12 @@ function getLocalCount() {
     if (fs.existsSync(jsonPath)) {
       const content = fs.readFileSync(jsonPath, 'utf8');
       const parsed = JSON.parse(content);
-      return Number(parsed.downloads) || 1;
+      return typeof parsed.downloads === 'number' ? parsed.downloads : 0;
     }
   } catch (err) {
     // fallback ignorado
   }
-  return 1;
+  return 0;
 }
 
 module.exports = async (req, res) => {
@@ -54,6 +54,9 @@ module.exports = async (req, res) => {
       if (data && typeof data.value === 'number') {
         return res.status(200).json({ downloads: data.value, source: 'cloud' });
       }
+    } else if (response.status === 404) {
+      // Nenhum download registrado ainda na chave limpa
+      return res.status(200).json({ downloads: 0, source: 'cloud_clean' });
     }
   } catch (err) {
     console.error('Erro ao ler da nuvem:', err);
