@@ -42,15 +42,21 @@
             Google que autorizares — não num servidor Pokt.
           </p>
           <div class="cta-row">
-            <a class="cta" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
+            <a class="cta btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
               Baixar para Windows
             </a>
             <a class="cta cta-outline" href="#cloud">Ver Pokt Cloud</a>
           </div>
-          <p class="download-note" id="download">
-            Executável portátil (~134&nbsp;MB) para Windows 10/11 · execute
-            <strong>Pokt-Craft-Launcher-0.1.0.exe</strong> (não precisa instalar)
-          </p>
+          <div class="download-badge-row">
+            <p class="download-note" id="download">
+              Executável portátil (~134&nbsp;MB) para Windows 10/11 · execute
+              <strong>Pokt-Craft-Launcher-0.1.0.exe</strong> (não precisa instalar)
+            </p>
+            <div class="download-badge" title="Total de downloads computados">
+              <span class="pulse-indicator"></span>
+              <span><strong class="download-counter-value">...</strong> downloads</span>
+            </div>
+          </div>
         </div>
         <figure class="frame">
           <img src="img1.png" alt="Pokt Craft Launcher — tela principal" />
@@ -99,8 +105,12 @@
             Um único ficheiro <strong>.exe</strong> portátil com o Pokt Craft Launcher completo.
             Abre direto no Windows — sem ZIP e sem instalador.
           </p>
+          <div class="download-counter-pill">
+            <span class="pill-icon">⬇</span>
+            <span><strong class="download-counter-value">...</strong> downloads já realizados</span>
+          </div>
         </div>
-        <a class="cta cta-large" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
+        <a class="cta cta-large btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
           Download Windows (.exe)
         </a>
       </section>
@@ -137,11 +147,13 @@
     <footer class="foot">
       <div>
         © 2026 Pokt Craft ·
-        <a href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>Download Windows</a> ·
+        <a class="btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>Download Windows</a> ·
+        <span class="foot-counter"><span class="download-counter-value">...</span> downloads</span> ·
         <a href="privacidade.html">Privacidade</a> ·
         <a href="termos.html">Termos</a>
       </div>
       <div>Windows · Linux · macOS</div>
     </footer>
+    <script src="contador.js" defer></script>
   </body>
 </html>

@@ -254,3 +254,74 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
   .download-panel { flex-direction: column; align-items: flex-start; }
   .top { flex-direction: column; align-items: flex-start; }
 }
+
+/* Download counter badges & pills */
+.download-badge-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+.download-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--navy-2);
+  border: 1px solid var(--line);
+  color: var(--mint);
+  font-family: var(--head);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.pulse-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--mint);
+  box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.7);
+  animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(0, 245, 160, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 245, 160, 0);
+  }
+}
+.download-counter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  background: rgba(11, 18, 32, 0.6);
+  border: 1px solid rgba(0, 245, 160, 0.3);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  color: var(--dim);
+}
+.download-counter-pill strong {
+  color: var(--mint);
+  font-family: var(--head);
+  font-size: 0.95rem;
+}
+.pill-icon {
+  color: var(--mint);
+  font-size: 0.95rem;
+}
+.foot-counter {
+  color: var(--mint);
+  font-weight: 600;
+}
+
