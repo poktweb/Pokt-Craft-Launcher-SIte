@@ -1,1 +1,6 @@
 download/*.exe
+download/*.AppImage
+download/*.deb
+download/*.rpm
+download/*.flatpak
+download/*.tar.gz

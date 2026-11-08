@@ -1,4 +1,4 @@
-name: Publish Windows download
+name: Publish launcher downloads
 
 on:
   push:
@@ -23,6 +23,6 @@ jobs:
         with:
           tag_name: v0.1.0
           name: Pokt Craft Launcher 0.1.0
-          body: Launcher portátil Windows (.exe).
+          body: Pokt Craft Launcher para Windows e Linux. Os pacotes Linux são publicados como assets da Release.
           files: download/Pokt-Craft-Launcher-0.1.0.exe
           make_latest: true

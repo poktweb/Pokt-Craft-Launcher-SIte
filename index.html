@@ -42,9 +42,10 @@
             Google que autorizares — não num servidor Pokt.
           </p>
           <div class="cta-row">
-            <a class="cta btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
+            <a class="cta btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0.exe">
               Baixar para Windows
             </a>
+            <a class="cta cta-outline" href="#download-linux">Baixar para Linux</a>
             <a class="cta cta-outline" href="#cloud">Ver Pokt Cloud</a>
           </div>
           <div class="download-badge-row">
@@ -98,21 +99,38 @@
         </div>
       </section>
 
-      <section class="download-panel">
+      <section class="download-panel" id="downloads">
         <div>
           <h2>Download gratuito</h2>
           <p>
-            Um único ficheiro <strong>.exe</strong> portátil com o Pokt Craft Launcher completo.
-            Abre direto no Windows — sem ZIP e sem instalador.
+            Escolhe o formato adequado para Windows ou para a tua distribuição Linux.
+            Todos os pacotes abaixo correspondem à versão <strong>0.1.0</strong>.
           </p>
           <div class="download-counter-pill">
             <span class="pill-icon">⬇</span>
             <span><strong class="download-counter-value">...</strong> downloads já realizados</span>
           </div>
         </div>
-        <a class="cta cta-large btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>
-          Download Windows (.exe)
-        </a>
+        <div class="download-grid">
+          <a class="download-option btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0.exe">
+            <strong>Windows</strong><span>.exe portátil · 133 MB</span>
+          </a>
+          <a class="download-option btn-download-tracker" id="download-linux" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0-x86_64.AppImage">
+            <strong>Linux AppImage</strong><span>Universal · 179 MB</span>
+          </a>
+          <a class="download-option btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0-amd64.deb">
+            <strong>Debian / Ubuntu</strong><span>Pacote .deb · 134 MB</span>
+          </a>
+          <a class="download-option btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0-x86_64.rpm">
+            <strong>Fedora / RHEL</strong><span>Pacote .rpm · 179 MB</span>
+          </a>
+          <a class="download-option btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0-x86_64.flatpak">
+            <strong>Linux Flatpak</strong><span>Pacote .flatpak · 143 MB</span>
+          </a>
+          <a class="download-option btn-download-tracker" href="https://github.com/poktweb/Pokt-Craft-Launcher-SIte/releases/download/v0.1.0/Pokt-Craft-Launcher-0.1.0-x64.tar.gz">
+            <strong>Linux genérico</strong><span>Arquivo .tar.gz · 172 MB</span>
+          </a>
+        </div>
       </section>
 
       <section class="cloud" id="cloud">
@@ -147,12 +165,12 @@
     <footer class="foot">
       <div>
         © 2026 Pokt Craft ·
-        <a class="btn-download-tracker" href="https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe" download>Download Windows</a> ·
+        <a href="#downloads">Downloads Windows e Linux</a> ·
         <span class="foot-counter"><span class="download-counter-value">...</span> downloads</span> ·
         <a href="privacidade.html">Privacidade</a> ·
         <a href="termos.html">Termos</a>
       </div>
-      <div>Windows · Linux · macOS</div>
+      <div>Windows · Linux</div>
     </footer>
     <script src="contador.js" defer></script>
   </body>
