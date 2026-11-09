@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/download/Pokt-Craft-Launcher-0.1.0.exe",
-      "destination": "https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.0.exe",
+      "source": "/download/Pokt-Craft-Launcher-0.1.1.exe",
+      "destination": "https://media.githubusercontent.com/media/poktweb/Pokt-Craft-Instal-es/main/Pokt-Craft-Launcher-0.1.1.exe",
       "permanent": false
     }
   ]

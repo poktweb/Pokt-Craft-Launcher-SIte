@@ -1,6 +1,12 @@
 .vercel
+node_modules
+.next
+out
 download/*.AppImage
 download/*.deb
 download/*.rpm
 download/*.flatpak
 download/*.tar.gz
+download/*.exe
+*.log
+.DS_Store
